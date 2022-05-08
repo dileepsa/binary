@@ -1,4 +1,5 @@
-const { createElement, createLink } = require('../createElement.js');
+/* eslint-disable no-magic-numbers */
+const { createElement } = require('../createElement.js');
 const fs = require('fs');
 
 const zero = () => {
@@ -16,16 +17,8 @@ const zero = () => {
 };
 
 const one = () => {
-  const base = createElement({ element: 'div', content: '', classes: ['one-base'] });
-  const pole = createElement({ element: 'div', content: '', classes: ['one-pole'] })
-  const wrapper = createElement(
-    {
-      element: 'div',
-      content: pole + base,
-      classes: ['one-wrapper']
-    });
-  return wrapper;
-}
+  return createElement({ element: 'div', content: '', classes: ['one'] });
+};
 
 const generateHtml = (binaryNum) => {
   const html = +binaryNum === 0 ? zero() : one();

@@ -12,14 +12,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .zero-outer {
   height: 6em;
   width: 5em;
   border-radius: 50%;
-  background-color: #5e5c5c;
+  background-color: rgb(197, 115, 115);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,25 +32,8 @@ body {
   background-color: lightgrey;
 }
 
-
-.one-wrapper {
-  height: 12em;
-  width: 5em;
-  padding-left: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 40em;
-  justify-content: center;
-}
-
-.one-base {
-  height: 5%;
-  width: 100%;
-  background-color: red;
-}
-
-.one-pole {
-  /* height: 50%; */
-  width: 10px;
-  background-color: green;
+.one {
+  height: 6em;
+  width: 1.5em;
+  background-color: rgb(76, 139, 76);
 }
