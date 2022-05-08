@@ -5,6 +5,7 @@
 
 body {
   background-color: lightgrey;
+  padding: 1em;
 }
 
 .page-wrapper {
@@ -14,14 +15,42 @@ body {
   gap: 10px;
 }
 
-.red {
-  height: 10em;
-  width: 10em;
+.zero-outer {
+  height: 6em;
+  width: 5em;
+  border-radius: 50%;
+  background-color: #5e5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zero-inner {
+  height: 70%;
+  width: 60%;
+  border-radius: inherit;
+  background-color: lightgrey;
+}
+
+
+.one-wrapper {
+  height: 12em;
+  width: 5em;
+  padding-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40em;
+  justify-content: center;
+}
+
+.one-base {
+  height: 5%;
+  width: 100%;
   background-color: red;
 }
 
-.green {
-  height: 10em;
-  width: 10em;
+.one-pole {
+  /* height: 50%; */
+  width: 10px;
   background-color: green;
 }
