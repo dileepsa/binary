@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.red {
+  height: 10em;
+  width: 10em;
+  background-color: red;
+}
+
+.green {
+  height: 10em;
+  width: 10em;
+  background-color: green;
+}
