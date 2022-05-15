@@ -1,23 +1,15 @@
 /* eslint-disable no-magic-numbers */
-const { createElement } = require('../createElement.js');
+const { createTag } = require('../createElement.js');
 const fs = require('fs');
 
 const zero = () => {
-  const innerDiv = createElement({
-    element: 'div',
-    content: '',
-    classes: ['zero-inner']
-  });
+  const innerDiv = createTag('div', '', ['zero-inner']);
 
-  return createElement({
-    element: 'div',
-    content: innerDiv,
-    classes: ['zero-outer']
-  });
+  return createTag('div', innerDiv, ['zero-outer']);
 };
 
 const one = () => {
-  return createElement({ element: 'div', content: '', classes: ['one'] });
+  return createTag('div', '', ['one']);
 };
 
 const generateHtml = (binaryNum) => {
