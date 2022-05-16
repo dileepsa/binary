@@ -10,7 +10,13 @@ body {
   padding: 1em;
 }
 
-.page-wrapper {
+.heading {
+  margin: 1em;
+  text-align: center;
+  font-size: 40px;
+}
+
+.binary-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
